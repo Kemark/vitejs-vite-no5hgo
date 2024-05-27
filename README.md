@@ -24,3 +24,9 @@ https://vuejs.org/guide/extras/web-components#vue-and-web-components
 
 Building a PrimeVue Library
 https://tailwind.primevue.org/guides/building-ui-library/#toggle-switch-result
+
+## Version 4
+
+### New Features
+
+The most notable feature is the new styled mode implementation. Previous iterations use SASS at an external repo called primevue-sass-theme which requires compilation of a theme.css file. This file had to be included in the application and need to be swapped at runtime for basic tasks like dark mode or primary color changes. In v4, styled mode is now part of the core, SASS is not used at all, and a new design token based architecture that fully utilizes CSS variables has been created. The new API is modern and superior to the legacy styled mode.
