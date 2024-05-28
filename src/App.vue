@@ -3,13 +3,17 @@ import { ref } from 'vue';
 import InputText from 'primevue/inputtext';
 import Accordion from 'primevue/accordion';
 import AccordionTab from 'primevue/accordiontab';
+import Calendar from 'primevue/calendar';
+import Slider from 'primevue/slider';
 
 const msg = ref('');
+const date = ref('');
+const value = ref(10);
 </script>
 
 <template>
   <main>
-    <h2>2. Primevue InputText</h2>
+    <h2>1. Primevue InputText</h2>
     <InputText v-model="msg" />
     <p>{{ msg }}</p>
 
@@ -59,6 +63,26 @@ const msg = ref('');
       </AccordionTab>
     </Accordion>
   </nav>
+
+    <h1>3. Date</h1>
+
+    <h2>3.1. Standard HTML</h2>
+    <label for="date">Date: </label>
+    <input type="date" id="date">
+
+    <h2>3.2. Primevue Calendar</h2>
+    <section>
+      <Calendar v-model="date" />
+    </section>
+ 
+    <h1>4. Slider</h1>
+    <section>
+      <Slider v-model="value" :step="20" />
+    </section>
+
+  <section>
+
+  </section>
 </template>
 
 <style scoped></style>

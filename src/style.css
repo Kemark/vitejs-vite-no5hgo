@@ -14,11 +14,18 @@ body {
 }
 
 h1 {
-  margin-top: 0;
+  margin-top: 2rem;
 }
 
-.component {
+.vue-component, .web-component {
   padding: 1rem;
-  background-color: rgb(65, 63, 63);
   margin: 2rem 0;
+}
+
+.vue-component {
+  background-color: rgb(26, 26, 79);
+}
+
+.web-component {
+  background-color: rgb(35, 45, 24);
 }
