@@ -1,7 +1,6 @@
 <script setup lang="ts">
-import { ref, defineCustomElement } from 'vue';
+import { ref } from 'vue';
 import InputText from 'primevue/inputtext';
-import OrderList from 'primevue/orderlist';
 import Accordion from 'primevue/accordion';
 import AccordionTab from 'primevue/accordiontab';
 

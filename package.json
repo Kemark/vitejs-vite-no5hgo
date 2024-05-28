@@ -10,7 +10,7 @@
   },
   "dependencies": {
     "vue": "^3.3.6",
-    "primevue": "3.52.0"
+    "primevue": "^3.37.0"
   },
   "devDependencies": {
     "@vitejs/plugin-vue": "^4.4.0",
